@@ -1,0 +1,13 @@
+.Main_frame {
+    padding: 0px 0px;
+    height:762px;
+    border-style:solid;
+    border-color:LightSeaGreen;
+    background-color:rgb(0, 0, 0,0.8);
+}
+
+.Space_frame {
+    height: 762px;
+    border-style: solid;
+    border-color: LightSeaGreen;
+}

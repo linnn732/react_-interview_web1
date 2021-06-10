@@ -1,0 +1,26 @@
+.build {
+    text-align:center;
+}
+
+.main_title {
+    color: white;
+    font-size: 30px;
+    margin: 30px 30px;
+    font-weight:800;
+    font-style: italic;
+}
+
+.the_interview_build {
+    overflow-y: auto;
+    background-color:rgb(248, 248, 255,0.1);
+    height: 500px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.btn_build {
+    height: 40px;
+    width: 500px;
+    margin: 30px 30px;
+    font-weight: 800;
+}

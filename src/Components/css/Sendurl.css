@@ -1,0 +1,72 @@
+.sendurl_title {
+    color: white;
+    font-size:30px;
+    margin:30px 30px;
+    font-weight:800;
+    font-style: italic;
+}
+
+.check_background {
+    border-radius: 20px;
+    background-color:rgba(177, 206, 189, 0.575);
+    height:140px;
+    width:60%;
+    margin:0 auto;
+}
+
+.dataTitle {
+    font-size:25px;
+    text-align:left;
+    color: white;
+    font-style: italic;
+    font-weight:700;
+}
+
+.data {
+    font-size:20px;
+    text-align:right;
+    color: orange;
+    font-style: italic;
+    font-weight:700;
+}
+
+.url_background {
+    border-radius: 20px;
+    background-color:rgba(175, 44, 44, 0.575);
+    height:150px;
+    width:45%;
+    margin:80px auto;
+}
+
+.urlTitle {
+    font-size:25px;
+    text-align:center;
+    color: white;
+    font-style: italic;
+    font-weight:700;
+}
+
+.back {
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin: 0px 30px 0px 0px;
+    width: 130px;
+}
+
+.yes {
+    border-radius: 20px;
+    padding: 10px 30px;
+    width: 130px;
+}
+
+.arrow_back {
+    height: 20px;
+    width: 30px;
+    padding: 0px 10px 0px 0px;
+}
+
+.arrow_yes {
+    height: 20px;
+    width: 30px;
+    padding: 0px 0px 0px 10px;
+}

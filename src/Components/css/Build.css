@@ -1,0 +1,45 @@
+.build_title {
+    color: white;
+    font-size:30px;
+    margin:30px 30px;
+    font-weight:800;
+    font-style: italic;
+}
+
+.setname_background {
+    border-radius:30px;
+    background-color:rgb(248, 248, 255,0.4);
+    height: 100px;
+    width:60%;
+    margin:0 auto;
+}
+
+.text_name {
+    width:500px;
+}
+
+.btn_no {
+    height:70px;
+    width:150px;
+    margin:0px 30px;
+}
+
+.btn_standard {
+    height: 70px;
+    width:150px;
+    margin:0px 30px;
+    padding:22px 0px;
+}
+
+.build_back {
+    border-radius: 10px;
+    padding: 10px 30px;
+    margin: 50px 30px 0px 0px;
+    width: 130px;
+}
+
+.arrow_back {
+    height: 20px;
+    width: 30px;
+    padding: 0px 10px 0px 0px;
+}

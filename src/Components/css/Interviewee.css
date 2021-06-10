@@ -1,0 +1,72 @@
+.Interviewee_title {
+    color: white;
+    font-size: 30px;
+    margin: 30px 30px;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.set_background {
+    border-radius: 20px;
+    background-color:rgba(177, 206, 189, 0.575);
+    height:50px;
+    width:50%;
+    margin:0 auto;
+}
+
+.text {
+    height:40px;
+    width:300px;
+    font-weight:800;
+}
+
+.button_join {
+    color:gray;
+    height:30px;
+    width:80px;
+    margin:7px 30px;
+    font-weight:800;
+}
+
+.set_interviewee {
+    overflow-y:auto;
+    background-color:rgb(248, 248, 255,0.1);
+    height:400px;
+    width:70%;
+    margin:0 auto;
+}
+
+.back {
+    border-radius: 20px;
+    padding: 10px 30px;
+    margin: 0px 30px 0px 0px;
+    width: 130px;
+}
+
+.next {
+    border-radius: 20px;
+    padding: 10px 30px;
+    width: 130px;
+}
+
+.arrow_back {
+    height: 20px;
+    width: 30px;
+    padding: 0px 10px 0px 0px;
+}
+
+.arrow_next {
+    height: 20px;
+    width: 30px;
+    padding: 0px 0px 0px 10px;
+}
+
+.email {
+    margin:20px 20px;
+    width:300px;
+    color:teal;
+    height:35px;
+    font-weight:800;
+    border-radius: 10px;
+    float: left;
+}
