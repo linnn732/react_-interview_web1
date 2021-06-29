@@ -3,16 +3,16 @@ import '../App.css';
 import React, { Component } from 'react'
 import GoogleLogin from 'react-google-login'
 import logo from '../interview2.png';
-import Main from './Main.js';
-import ReactDOM from 'react-dom';
-import Home from './Home';
-
+import Cookies from 'js-cookie';
 
 class Login extends Component {
 
     constructor(props){
         super(props);
         this.responseGoogle = this.responseGoogle.bind(this);
+        this.state = {
+            MyToken: Cookies.get('MyToken')
+        }
     }
     
     responseGoogle = (response) => {
@@ -21,7 +21,6 @@ class Login extends Component {
         console.log("accessToken:", response.accessToken);
         // document.cookie = 'profileObj=' + encodeURIComponent(response.profileObj.email); //email存入cookie
         // document.cookie = 'accessToken=' + encodeURIComponent(response.accessToken);    //token存入cookie
-        //前端(login.js)呼叫前端API(server.js)
 
         //Login
         var data = JSON.stringify(response)
@@ -102,27 +101,6 @@ class Login extends Component {
         //                 console.log(e);
         //             //發生錯誤時要做的事情
         //             })         
-
-        // //CheckToken
-        // var check_token= { "check_token": "" }  //{ "email": "C108118122","token_id": "111"}
-        // // global.Headers = fetch.Headers;        
-        // fetch('http://localhost:3000/checktoken', { 
-        //             method:"POST",
-        //             body: JSON.stringify(check_token), // data can be `string` or {object}!
-        //             headers: new Headers({
-        //                 'Content-Type': 'application/json'
-        //             })                
-        //     })
-        //         .then(res => res.json()) //把request json化
-        //         .then(data => {
-
-
-        //             //接到request data後要做的事情
-        //         })
-        //         .catch(e => {
-        //             console.log(e);
-        //         //發生錯誤時要做的事情
-        //         }) 
     }
 
     render() {

@@ -16,23 +16,10 @@ var request = require('request');
 var http = require('http');
 const DomainName =  "localhost";
 const SSLPORT =  "3000";
-
-// const credentials = { key: privateKey, cert: certificate };
-
-// const httpsServer = https.createServer(credentials, app);
 const httpServer = http.createServer(app);
-
-
-// httpsServer.listen(SSLPORT, function() {
-//     console.log('HTTPS Server is running on: https://%s:%s', DomainName, SSLPORT);
-// });
-
 httpServer.listen(SSLPORT, function () {
     console.log('HTTPS Server is running on: http://%s:%s', DomainName, SSLPORT);
 }); 
-
-// const get_ip = require('ipware')().get_ip; //取得header ＩＰ 套件
-
 
 // app.use(bodyParser.json())
 app.use(cors())
@@ -41,6 +28,7 @@ app.use(cors())
 // }))
 // app.use(cookieParser())
 //static中介軟體函數可使用(css,javascript,影像)
+
 app.use(express.static('build'));
 app.get('/', function (request, response) {
     response.clearCookie('token')
@@ -51,25 +39,6 @@ app.get('/', function (request, response) {
         }
     })
 });
-
-//呼叫後端API
-/*
-app.post('/savetoken',async(req, res) =>{
-    data_context ={"email_id": "3","email": "emily095333637@gmail.com","token_id": "1111"};
-    //data_content = req.json();
-    var options = {
-        'method': 'POST',
-        'url': 'http://localhost:8888/add',
-        'body': JSON.stringify(data_context),
-        'headers': {'Content_Type': 'application/json'}
-    };
-    request(options, function (error, response){
-        if (error) throw new Error(error);
-        res.send(response.body);
-    });
-    
-})
-*/
 
 const bodyParser = require('body-parser'); //使req.body轉json
 app.use(bodyParser.json());
@@ -161,7 +130,8 @@ app.post('/checktoken',async(req, res) =>{
     request(options, function (error, response){
         if (error) throw new Error(error);
         console.log(response)
-        res.send("response"); //reponse.body
+        //console.log(response.body)
+        res.send(response); //reponse.body
     });
 })
 
